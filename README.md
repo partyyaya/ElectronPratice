@@ -429,3 +429,5 @@ function handleSquirrelEvent() {
 ```
 - 這個方式是利用 windows-installer，
 - 它已經被封裝在 electron-packager，因此不需要另外安裝，直接調用即可 
+
+- #### 參考網址 : https://dotblogs.com.tw/explooosion/2018/03/25/181604#2
