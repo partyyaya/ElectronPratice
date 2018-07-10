@@ -1,0 +1,23 @@
+{
+  "name": "electronpratice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-packager . AlarmClock --out AlarmClock --overwrite --icon=./myicon.ico --platform=win32 --arch=x64  --prune=true --squirrel-install --ignore=node_modules/electron-* --electron-version=2.0.2 --ignore=AlarmClock-win32-x64 --version-string.CompanyName=cgh --version-string.ProductName=AlarmClock",
+    "pack": "grunt"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron-packager": "^12.1.0",
+    "moment": "^2.22.2",
+    "node-notifier": "^5.2.1"
+  },
+  "devDependencies": {
+    "electron": "^2.0.2",
+    "grunt": "^1.0.3",
+    "grunt-electron-installer": "^2.1.0"
+  }
+}
