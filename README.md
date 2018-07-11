@@ -1,6 +1,14 @@
 ## Electron
 
-#### 基礎功能
+- #### <a href="#e1">基礎功能</a>
+- #### <a href="#e2">撰寫通知程序</a>
+- #### <a href="#e3">系統顯示在系統匣(工作列右方)</a>
+- #### <a href="#e4">畫面縮小時隱藏</a>
+- #### <a href="#e5">提醒的時候顯示表單</a>
+- #### <a href="#e6">程式編譯 exe 執行檔</a>
+- #### <a href="#e7">程式封裝 安裝檔</a>
+
+#### <a id="e1" href="#top">基礎功能</a>
 
 - 初始化設定 :
     - 用 cmd 進入專案資料夾
@@ -155,8 +163,7 @@ function onAlarmTextChange(event) {
     alarmTime = event.target.value
 }
 ```
-
-#### 撰寫通知程序
+#### <a id="e2" href="#top">撰寫通知程序</a>
 
 - 安裝  node-notifier : npm install node-notifier --save
 - 修改 app.js
@@ -186,7 +193,8 @@ function notice(msg) {
 }
 ```
 
-#### 系統顯示在系統匣(工作列右方)
+#### <a id="e3" href="#top">系統顯示在系統匣(工作列右方)</a>
+
 - 需要使用 :　menu , tray
 ```javascript
 //引入
@@ -225,8 +233,7 @@ function createTray() {
     appIcon.setContextMenu(contextMenu)
 }
 ```
-
-#### 畫面縮小時隱藏
+#### <a id="e4" href="#top">畫面縮小時隱藏</a>
 - 在 app.js 增加
 ```javascript
 function createWindow() {
@@ -242,7 +249,7 @@ function createWindow() {
 }
 ```
 
-#### 提醒的時候顯示表單
+#### <a id="e5" href="#top">提醒的時候顯示表單</a>
 
 - 在隱藏起來,用提醒來跳出表單
 - 需要用到 remote，才能從渲染層到主程式 main.js 進行通訊。
@@ -272,7 +279,7 @@ function notice(msg) {
 }
 ```
 
-#### 程式編譯 exe 執行檔
+#### <a id="e6" href="#top">程式編譯 exe 執行檔</a>
 
 - 將程式編譯成 exe，我們使用 electron-packager
 - npm install electron-packager --save
@@ -308,7 +315,7 @@ function notice(msg) {
     - --version-string.ProductName=AlarmClock：軟體名稱（顯示於軟體資訊中）
 - 編譯看看 : npm run build
 
-#### 程式封裝 安裝檔
+#### <a id="e7" href="#top">程式封裝 安裝檔</a>
 - 將程式封裝變成安裝版的一個套件 grunt-electron-installer
 - 由於該封裝工具是透過 grunt 運行，所以一併安裝
 - npm install --save-dev grunt
