@@ -1,4 +1,4 @@
-## Electron
+## Electron 用js製作桌面應用
 
 - #### <a href="#e1">基礎功能</a>
 - #### <a href="#e2">撰寫通知程序</a>
